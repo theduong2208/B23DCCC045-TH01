@@ -1,38 +1,39 @@
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 18px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; /* Đặt các phần tử trong li thẳng hàng */
+  justify-content: space-between; /* Khoảng cách giữa nội dung và các nút */
 }
 
-.App-link {
-  color: #61dafb;
+li div {
+  display: flex;
+  align-items: center; /* Đảm bảo checkbox và text task thẳng hàng */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li button {
+  margin-left: 10px;
 }
